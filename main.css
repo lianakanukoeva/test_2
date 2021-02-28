@@ -1,0 +1,139 @@
+html{
+    min-height: 100%;
+    width: 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    font-weight: normal;
+    line-height: 1.42;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+    position: relative;
+}
+
+section{
+    padding: 2% 2% 0 2%;
+}
+
+.test__h2{
+    font-weight: 600;
+    margin: 0;
+    font-size: 24pt;
+    color: #7c002f;
+}
+
+.test__information{
+    max-width: 100%;
+    padding: 20px;
+}
+
+.span{
+    color: #dfe4df
+}
+.test__weather{
+    padding: 20px 20px 0 20px;
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+}
+
+.test__block{
+    margin: 8px;
+    border: 1px solid #7c7c7c;
+    box-shadow: 0 2px 4px 2px #7c7c7c;
+    display: grid;
+    grid-template-rows: 20% 29% 40% 10%;
+    overflow: hidden;
+}
+
+.test__title{
+    position: relative;
+    height: 15%;
+    color: #fff;
+    background-color: #7c7c7c;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20% 5%;
+}
+
+.title__on{
+    margin-top: -10%;
+    display: none;
+}
+
+.test__text{
+    position: relative;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20%;
+    visibility: hidden;
+}
+
+.visible{
+    display: block;
+}
+
+.visible-non{
+    display: none;
+}
+
+.active .test__text{
+    visibility: visible;
+}
+.active .test__title{
+    background-color: #7c002f;
+}
+.active .title__off{
+    display: none;
+}
+.active .title__on{
+    display: block;
+}
+.active .test__icon .visible{
+    display: none;
+}
+.active .test__icon .visible-non{
+    display: block;
+}
+
+.test__checkbox{
+    display: inline-block;
+    width: 70px;
+    height: 24px;
+    border-radius: 35px;
+    background: #fff;
+    z-index: 0;
+    margin: 0 auto;
+    padding: 0;
+    border: 2px solid #7c7c7c;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms;
+} 
+
+.test__checkbox::after{
+    content: "";
+    height: 36px;
+    width: 36px;
+    border: 2px solid #7c7c7c;
+    border-radius: 50%;
+    background: #f9fdc0;
+    top: -6px;
+    left: -6px;
+    transition-duration: 300ms;
+    position: absolute;
+    z-index: 1;
+}
+
+.checkbox-on {
+    background: #7c002f;
+}
+.checkbox-on::after {
+    left: 37px;
+}

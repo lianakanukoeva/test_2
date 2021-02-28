@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="main.css")
+        title Второе тестовое задание
+    body
+        .wrapper
+            .maincontent
+                section.test
+                    h2.test__h2 Критические значения параметров метеорологических явлений
+                    .test__information Сами по себе атмосферные осадки и изменения температур не несут опасности, значение имеет то, насколько они могут усилиться. Когда мелкий дождь становится затяжным или превращается в сильный дождь (ливень), возникает опасность подтопления. Усиление, поначалу легкого ветерка до шквалистого ветра повышает вероятность обрыва проводов. То же относится и к другим метеорологическим явлениям. С помощью переключателя «усильте» то или иное явление природы и посмотрите, при каких критических параметрах оно становятся опасным.
+                        .span *Сдвиньте переключатель под иконкой, чтобы увидеть критические параметры.
+                    .test__weather
+                        .test__block
+                            .test__title
+                                .title__off Ветер
+                                .title__on Сильный ветер (шквалистый)
+                            .test__icon
+                                img(src='Нарезка/1_off.png', alt="погода").visible
+                                img(src='Нарезка/1_on.png', alt="погода").visible-non
+                            .test__text Скорость порывов от 25м/c и более. 
+                            .test__checkbox
+                        .test__block
+                            .test__title
+                                .title__off Дождь
+                                .title__on Сильный дождь (ливень)
+                            .test__icon
+                                img(src='Нарезка/2_off.png', alt="погода").visible
+                                img(src='Нарезка/2_on.png', alt="погода").visible-non
+                            .test__text Кол-во осадков 100 мм и более, в период менее чем за 12 часов.
+                            .test__checkbox
+                        .test__block
+                            .test__title
+                                .title__off Снег
+                                .title__on Сильный снег
+                            .test__icon
+                                img(src='Нарезка/3_off.png', alt="погода").visible
+                                img(src='Нарезка/3_on.png', alt="погода").visible-non
+                            .test__text Кол-во осадков 20 мм и более, в период менее чем за 12 часов.
+                            .test__checkbox
+                        .test__block
+                            .test__title
+                                .title__off Метель
+                                .title__on Сильная метель
+                            .test__icon
+                                img(src='Нарезка/4_off.png', alt="погода").visible
+                                img(src='Нарезка/4_on.png', alt="погода").visible-non
+                            .test__text При ветре 20 м/c в течение суток с выпадением снега.
+                            .test__checkbox
+                        .test__block
+                            .test__title
+                                .title__off Град
+                                .title__on Крупный град
+                            .test__icon
+                                img(src='Нарезка/5_off.png', alt="погода").visible
+                                img(src='Нарезка/5_on.png', alt="погода").visible-non
+                            .test__text Диаметр градин 20 мм и более.
+                            .test__checkbox
+                        .test__block
+                            .test__title
+                                .title__off Гололед
+                                .title__on Сильный гололед
+                            .test__icon
+                                img(src='Нарезка/6_off.png', alt="погода").visible
+                                img(src='Нарезка/6_on.png', alt="погода").visible-non
+                            .test__text Диаметр отложений на проводах 20 мм и более.
+                            .test__checkbox
+                        .test__block
+                            .test__title
+                                .title__off Мороз
+                                .title__on Сильный Мороз
+                            .test__icon
+                                img(src='Нарезка/7_off.png', alt="погода").visible
+                                img(src='Нарезка/7_on.png', alt="погода").visible-non
+                            .test__text Температура воздуха у поверхности земли - 30°C и ниже для Европейской части РФ. 
+                            .test__checkbox
+    script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js")
+    script( type="text/javascript" src="main.js")
